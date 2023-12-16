@@ -1,0 +1,11 @@
+# program: mtl_main.py
+name: mtl_all
+method: grid
+metric:
+  goal: maximize
+  name: avg_val_f1  # Change this based on the metric you are optimizing
+parameters:
+  weight_decay:
+    values: [0.00, 0.01]
+  lr: 
+    values: [3.0e-06, 5.0e-05, 1.0e-06, 2.0e-05]
